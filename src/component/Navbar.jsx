@@ -13,7 +13,7 @@ const Navbar = () => {
             : ""
         }
       >
-        <li className="py-2 px-4 hover:font-semibold text-gray-600 font-medium">Home</li>
+        <li className="py-2 px-4 hover:text-gray-900 text-gray-600 font-medium">Home</li>
       </NavLink>
       <NavLink
         to="/addProduct"
@@ -25,7 +25,7 @@ const Navbar = () => {
             : ""
         }
       >
-        <li className="py-2 px-4 hover:font-semibold text-gray-600 font-medium">Add Product</li>
+        <li className="py-2 px-4 hover:text-gray-900 text-gray-600 font-medium">Add Product</li>
       </NavLink>
       <NavLink
         to="/myCart"
@@ -37,7 +37,7 @@ const Navbar = () => {
             : ""
         }
       >
-        <li className="py-2 px-4 hover:font-semibold text-gray-600 font-medium">My Cart</li>
+        <li className="py-2 px-4 hover:text-gray-900 text-gray-600 font-medium">My Cart</li>
       </NavLink>
     </>
   );

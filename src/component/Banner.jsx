@@ -42,15 +42,14 @@ const Banner = () => {
             }}
           >
             <div className="hero-overlay bg-opacity-40"></div>
-            <div className="hero-content text-neutral-content">
-              <div className="">
-                <h1 className=" -mt-[260px] text-white text-5xl font-semibold">
-                  Conferences and Seminars
-                </h1>
-                <button className="glass mt-3 px-[18px] text-white rounded-md py-2 hover:bg-white font-medium hover:text-gray-800 hover:transition">
-                  Buy Now
-                </button>
+            <div className="text-center">
+              <div className="flex gap-4 items-center -mt-[260px]">
+                <img className="w-[74px] " src="https://i.postimg.cc/MpN7C6j3/bmw.png" alt="" />
+                <p className="text-5xl font-semibold text-white">BMW 3 Series</p>
               </div>
+              <button className="glass  px-[18px] text-white rounded-md py-[10px] hover:bg-white font-medium hover:text-gray-800 hover:transition">
+                Buy Now
+              </button>
             </div>
           </div>
         </SwiperSlide>
@@ -62,15 +61,14 @@ const Banner = () => {
             }}
           >
             <div className="hero-overlay bg-opacity-40"></div>
-            <div className="hero-content text-neutral-content">
-              <div className="">
-                <h1 className=" -mt-[260px] text-white text-5xl font-semibold">
-                  Conferences and Seminars
-                </h1>
-                <button className="glass mt-3 px-[18px] text-white rounded-md py-2 hover:bg-white font-medium hover:text-gray-800 hover:transition">
-                  Buy Now
-                </button>
+            <div className="text-center">
+              <div className="flex gap-4 items-center -mt-[260px]">
+                <img className="w-20 " src="https://i.postimg.cc/mD3wsvYx/output-onlinepngtools-1.png" alt="" />
+                <p className="text-5xl font-semibold text-white">Tesla 3 Model Y</p>
               </div>
+              <button className="glass  px-[18px] text-white rounded-md py-[10px] hover:bg-white font-medium hover:text-gray-800 hover:transition">
+                Buy Now
+              </button>
             </div>
           </div>
         </SwiperSlide>
@@ -82,15 +80,14 @@ const Banner = () => {
             }}
           >
             <div className="hero-overlay bg-opacity-40"></div>
-            <div className="hero-content text-neutral-content">
-              <div className="">
-                <h1 className=" mt-[370px] text-white text-5xl font-semibold">
-                  Conferences and Seminars
-                </h1>
-                <button className="glass mt-3 px-[18px] text-white rounded-md py-2 hover:bg-white font-medium hover:text-gray-800 hover:transition">
-                  Buy Now
-                </button>
+            <div className="text-center">
+              <div className="flex items-center -mt-[260px]">
+                <img className="w-[180px] -mr-6" src="https://i.postimg.cc/9fgbb6dC/toyota-log.png" alt="" />
+                <p className="text-5xl font-semibold text-white">Toyota Corolla</p>
               </div>
+              <button className="glass  px-[18px] text-white rounded-md py-[10px] hover:bg-white font-medium hover:text-gray-800 hover:transition">
+                Buy Now
+              </button>
             </div>
           </div>
         </SwiperSlide>
@@ -102,15 +99,14 @@ const Banner = () => {
             }}
           >
             <div className="hero-overlay bg-opacity-40"></div>
-            <div className="hero-content text-neutral-content">
-              <div className="">
-                <h1 className=" -mt-[260px] text-white text-5xl font-semibold">
-                  Conferences and Seminars
-                </h1>
-                <button className="glass mt-3 px-[18px] text-white rounded-md py-2 hover:bg-white font-medium hover:text-gray-800 hover:transition">
-                  Buy Now
-                </button>
+            <div className="text-center">
+              <div className="flex gap-4 items-center -mt-[260px]">
+                <img className="w-20 " src="https://i.postimg.cc/mD3wsvYx/output-onlinepngtools-1.png" alt="" />
+                <p className="text-5xl font-semibold text-white">Tesla Roadster</p>
               </div>
+              <button className="glass  px-[18px] text-white rounded-md py-[10px] hover:bg-white font-medium hover:text-gray-800 hover:transition">
+                Buy Now
+              </button>
             </div>
           </div>
         </SwiperSlide>
@@ -123,15 +119,14 @@ const Banner = () => {
             }}
           >
             <div className="hero-overlay bg-opacity-40"></div>
-            <div className="hero-content text-neutral-content">
-              <div className="">
-                <h1 className=" mt-[370px] text-white text-5xl font-semibold">
-                  Conferences and Seminars
-                </h1>
-                <button className="glass mt-3 px-[18px] text-white rounded-md py-2 hover:bg-white font-medium hover:text-gray-800 hover:transition">
-                  Buy Now
-                </button>
+            <div className="text-center">
+              <div className="flex gap-1 items-center -mt-[260px]">
+                <img className="w-[150px] " src="https://i.postimg.cc/J031vzBJ/mercedes.png" alt="" />
+                <p className="text-5xl font-semibold text-white">Mercedes-Benz C-Class</p>
               </div>
+              <button className="glass  px-[18px] text-white rounded-md py-[10px] hover:bg-white font-medium hover:text-gray-800 hover:transition">
+                Buy Now
+              </button>
             </div>
           </div>
         </SwiperSlide>
@@ -143,15 +138,14 @@ const Banner = () => {
             }}
           >
             <div className="hero-overlay bg-opacity-40"></div>
-            <div className="hero-content text-neutral-content">
-              <div className="">
-                <h1 className=" -mt-[260px] text-white text-5xl font-semibold">
-                  Conferences and Seminars
-                </h1>
-                <button className="glass mt-3 px-[18px] text-white rounded-md py-2 hover:bg-white font-medium  hover:text-gray-800 hover:transition">
-                  Buy Now
-                </button>
+            <div className="text-center">
+              <div className="flex gap-4 items-center -mt-[260px]">
+                <img className="w-[170px] " src="https://i.postimg.cc/5t9gJ44w/output-onlinepngtools-2.png" alt="" />
+                <p className="text-5xl font-semibold text-white">Ford Mondeo</p>
               </div>
+              <button className="glass -mt-4  px-[18px] text-white rounded-md py-[10px] hover:bg-white font-medium hover:text-gray-800 hover:transition">
+                Buy Now
+              </button>
             </div>
           </div>
         </SwiperSlide>
