@@ -1,0 +1,26 @@
+[
+    {
+      "name": "Toyota",
+      "img_link": "https://i.postimg.cc/NFRMtxZK/toyota.png"
+    },
+    {
+      "name": "Ford Mustang",
+      "img_link": "https://i.postimg.cc/X7cJDQwh/ford.png"
+    },
+    {
+      "name": "Honda",
+      "img_link": "https://i.postimg.cc/vZ0mGT2t/honda.png"
+    },
+    {
+      "name": "Mercedes-benz",
+      "img_link": "https://i.postimg.cc/J031vzBJ/mercedes.png"
+    },
+    {
+      "name": "Tesla",
+      "img_link": "https://i.postimg.cc/cLRQhRH4/tesla.png"
+    },
+    {
+      "name": "BMW",
+      "img_link": "https://i.postimg.cc/Pq8NKhKb/bmw.png"
+    }
+  ]
