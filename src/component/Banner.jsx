@@ -1,7 +1,14 @@
-import { Navigation, Autoplay, Pagination, A11y } from "swiper/modules";
+import {
+  Navigation,
+  Autoplay,
+  Pagination,
+  Scrollbar,
+  A11y,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/scrollbar";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
@@ -13,7 +20,7 @@ const Banner = () => {
           "--swiper-navigation-color": "#fff",
           "--swiper-pagination-color": "#fff",
         }}
-        modules={[Navigation, Autoplay, Pagination, A11y]}
+        modules={[Navigation, Autoplay, Pagination, Scrollbar, A11y]}
         spaceBetween={0}
         slidesPerView={1}
         loop={true}
@@ -22,6 +29,7 @@ const Banner = () => {
           disableOnInteraction: false,
         }}
         navigation
+        scrollbar={{ clickable: true }}
         pagination={{ clickable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
@@ -30,20 +38,18 @@ const Banner = () => {
           <div
             className="hero min-h-screen"
             style={{
-              backgroundImage:
-                "url(https://i.ibb.co/fdh4d5R/header-event-management.jpg)",
+              backgroundImage: "url(https://i.postimg.cc/4d11fJQ6/bmw1.jpg)",
             }}
           >
             <div className="hero-overlay bg-opacity-40"></div>
-            <div className="hero-content text-center text-neutral-content">
+            <div className="hero-content text-neutral-content">
               <div className="">
-                <h1 className="mb-5 text-5xl font-bold">
+                <h1 className=" -mt-[260px] text-white text-5xl font-semibold">
                   Conferences and Seminars
                 </h1>
-                <p className="mb-5">
-                  Our Conferences and Seminars Service is committed to
-                  delivering excellence in event planning and management.
-                </p>
+                <button className="glass mt-3 px-[18px] text-white rounded-md py-2 hover:bg-white font-medium hover:text-gray-800 hover:transition">
+                  Buy Now
+                </button>
               </div>
             </div>
           </div>
@@ -52,19 +58,18 @@ const Banner = () => {
           <div
             className="hero min-h-screen"
             style={{
-              backgroundImage: "url(https://i.ibb.co/16Qdz59/exhibitions.jpg)",
+              backgroundImage: "url(https://i.postimg.cc/3RCTCbg8/tesla2.jpg)",
             }}
           >
             <div className="hero-overlay bg-opacity-40"></div>
-            <div className="hero-content text-center text-neutral-content">
+            <div className="hero-content text-neutral-content">
               <div className="">
-                <h1 className="mb-5 text-5xl font-bold">
-                  Trade Shows and Expos
+                <h1 className=" -mt-[260px] text-white text-5xl font-semibold">
+                  Conferences and Seminars
                 </h1>
-                <p className="mb-5">
-                  Our Trade Shows and Expos Service is dedicated to ensuring
-                  that your event stands out, meets your goals.
-                </p>
+                <button className="glass mt-3 px-[18px] text-white rounded-md py-2 hover:bg-white font-medium hover:text-gray-800 hover:transition">
+                  Buy Now
+                </button>
               </div>
             </div>
           </div>
@@ -73,20 +78,38 @@ const Banner = () => {
           <div
             className="hero min-h-screen"
             style={{
-              backgroundImage:
-                "url(https://i.ibb.co/BtKLQF7/Team-Building-Page-Imagepng.png)",
+              backgroundImage: "url(https://i.postimg.cc/VkJhgHjq/toyota.jpg)",
             }}
           >
             <div className="hero-overlay bg-opacity-40"></div>
-            <div className="hero-content text-center text-neutral-content">
+            <div className="hero-content text-neutral-content">
               <div className="">
-                <h1 className="mb-5 text-5xl font-bold">
-                  Team Building Workshops
+                <h1 className=" mt-[370px] text-white text-5xl font-semibold">
+                  Conferences and Seminars
                 </h1>
-                <p className="mb-5">
-                  Our Building Workshops Service is committed to providing
-                  valuable.
-                </p>
+                <button className="glass mt-3 px-[18px] text-white rounded-md py-2 hover:bg-white font-medium hover:text-gray-800 hover:transition">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div
+            className="hero min-h-screen"
+            style={{
+              backgroundImage: "url(https://i.postimg.cc/SNhQwCZY/tesla.jpg)",
+            }}
+          >
+            <div className="hero-overlay bg-opacity-40"></div>
+            <div className="hero-content text-neutral-content">
+              <div className="">
+                <h1 className=" -mt-[260px] text-white text-5xl font-semibold">
+                  Conferences and Seminars
+                </h1>
+                <button className="glass mt-3 px-[18px] text-white rounded-md py-2 hover:bg-white font-medium hover:text-gray-800 hover:transition">
+                  Buy Now
+                </button>
               </div>
             </div>
           </div>
@@ -96,17 +119,18 @@ const Banner = () => {
             className="hero min-h-screen"
             style={{
               backgroundImage:
-                "url(https://i.ibb.co/tYjM3nV/product-launches.jpg)",
+                "url(https://i.postimg.cc/2SsVSymP/mercedes1.jpg)",
             }}
           >
             <div className="hero-overlay bg-opacity-40"></div>
-            <div className="hero-content text-center text-neutral-content">
+            <div className="hero-content text-neutral-content">
               <div className="">
-                <h1 className="mb-5 text-5xl font-bold">Product Launches</h1>
-                <p className="mb-5">
-                  Our Product Launches Service is dedicated to ensuring your
-                  product launch is a resounding success.
-                </p>
+                <h1 className=" mt-[370px] text-white text-5xl font-semibold">
+                  Conferences and Seminars
+                </h1>
+                <button className="glass mt-3 px-[18px] text-white rounded-md py-2 hover:bg-white font-medium hover:text-gray-800 hover:transition">
+                  Buy Now
+                </button>
               </div>
             </div>
           </div>
@@ -115,38 +139,18 @@ const Banner = () => {
           <div
             className="hero min-h-screen"
             style={{
-              backgroundImage:
-                "url(https://i.ibb.co/g4nRDSK/corporate-meeting.jpg)",
+              backgroundImage: "url(https://i.postimg.cc/J7s0Zjn9/ford.jpg)",
             }}
           >
             <div className="hero-overlay bg-opacity-40"></div>
-            <div className="hero-content text-center text-neutral-content">
+            <div className="hero-content text-neutral-content">
               <div className="">
-                <h1 className="mb-5 text-5xl font-bold">Corporate Meetings</h1>
-                <p className="mb-5">
-                  Our Corporate Meetings Service is dedicated to helping you
-                  maximize the impact of your meetings.
-                </p>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            className="hero min-h-screen"
-            style={{
-              backgroundImage: "url(https://i.ibb.co/dD3hrbQ/ceremony.webp)",
-            }}
-          >
-            <div className="hero-overlay bg-opacity-40"></div>
-            <div className="hero-content text-center text-neutral-content">
-              <div className="">
-                <h1 className="mb-5 text-5xl font-bold">Award Ceremonies</h1>
-                <p className="mb-5">
-                  Our Award Ceremonies Service is dedicated to helping you
-                  create a prestigious and memorable event that celebrates
-                  achievements and inspires future success.
-                </p>
+                <h1 className=" -mt-[260px] text-white text-5xl font-semibold">
+                  Conferences and Seminars
+                </h1>
+                <button className="glass mt-3 px-[18px] text-white rounded-md py-2 hover:bg-white font-medium  hover:text-gray-800 hover:transition">
+                  Buy Now
+                </button>
               </div>
             </div>
           </div>

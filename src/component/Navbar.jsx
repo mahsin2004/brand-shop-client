@@ -9,11 +9,11 @@ const Navbar = () => {
           isPending
             ? "pending"
             : isActive
-            ? "bg-sky-400 font-medium text-white rounded-md"
+            ? "bg-base-200 rounded-sm text-gray-700"
             : ""
         }
       >
-        <li className="py-2 px-4">Home</li>
+        <li className="py-2 px-4 text-gray-600 font-medium">Home</li>
       </NavLink>
       <NavLink
         to="/addProduct"
@@ -21,11 +21,11 @@ const Navbar = () => {
           isPending
             ? "pending"
             : isActive
-            ? "bg-sky-400 font-medium text-white rounded-md"
+            ? "bg-base-200 rounded-sm text-gray-700"
             : ""
         }
       >
-        <li className="py-2 px-4">Add Product</li>
+        <li className="py-2 px-4 text-gray-600 font-medium">Add Product</li>
       </NavLink>
       <NavLink
         to="/myCart"
@@ -33,18 +33,18 @@ const Navbar = () => {
           isPending
             ? "pending"
             : isActive
-            ? "bg-sky-400 font-medium text-white rounded-md"
+            ? "bg-base-200 rounded-sm text-gray-700"
             : ""
         }
       >
-        <li className="py-2 px-4">My Cart</li>
+        <li className="bg-base-200 rounded-sm font-medium text-gray-700">My Cart</li>
       </NavLink>
     </>
   );
 
   return (
-    <div>
-      <div className="navbar bg-base-100">
+    <div className="sticky top-0 z-10 w-full glass">
+      <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -76,7 +76,7 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <button className="">Log in</button>
+          <button className="hover:bg-gray-600 py-2 px-5 hover:text-white hover:rounded-md rounded-md border">Log in</button>
         </div>
       </div>
     </div>
