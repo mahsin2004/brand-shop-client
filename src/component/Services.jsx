@@ -2,16 +2,16 @@ const Services = () => {
   return (
     <div className="max-w-[1400px] mx-auto px-6 py-28">
       <div>
-        <h1 className="text-5xl font-semibold text-gray-800">Our Services</h1>
+        <h1 className="text-4xl lg:text-5xl font-semibold text-gray-800">Our Services</h1>
         <div className="pt-2">
-          <p className=" text-gray-600 text-xl w-2/4">
+          <p className=" text-gray-600 lg:text-xl lg:w-2/4">
             Our pricing experts exclusive insights help you buy a new or used
             car and get a loan
           </p>
         </div>
 
         {/* part-1 */}
-        <div className="grid grid-cols-3 gap-6 justify-between mt-11">
+        <div className="grid lg:grid-cols-3 gap-6 justify-between mt-11">
           <div className="relative flex w-full flex-col rounded-xl bg-gradient-to-tr from-gray-800 to-gray-600 hover:bg-gradient-to-tr hover:from-pink-600 hover:to-pink-400 hover:scale-105 hover:transition bg-clip-border p-8 text-white shadow-md shadow-gray-500/40">
             <div className="relative pb-8 m-0 mb-8 overflow-hidden text-center text-gray-700 bg-transparent border-b rounded-none shadow-none border-white/50 bg-clip-border">
               <p className="block font-sans text-sm antialiased font-normal leading-normal text-white uppercase">

@@ -44,10 +44,10 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-40"></div>
             <div className="text-center">
               <div className="flex gap-4 items-center -mt-[260px]">
-                <img className="w-[74px] " src="https://i.postimg.cc/MpN7C6j3/bmw.png" alt="" />
-                <p className="text-5xl font-semibold text-white">BMW 3 Series</p>
+                <img className="w-[55px] lg:w-[74px] " src="https://i.postimg.cc/MpN7C6j3/bmw.png" alt="" />
+                <p className="text-3xl lg:text-5xl font-semibold text-white">BMW 3 Series</p>
               </div>
-              <button className="glass  px-[18px] text-white rounded-md py-[10px] hover:bg-white font-medium hover:text-gray-800 hover:transition">
+              <button className="glass  px-[12px] py-[6px] lg:py-[10px]  lg:px-[18px] text-white rounded-md hover:bg-white font-medium hover:text-gray-800 hover:transition">
                 Buy Now
               </button>
             </div>
@@ -63,10 +63,10 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-40"></div>
             <div className="text-center">
               <div className="flex gap-4 items-center -mt-[260px]">
-                <img className="w-20 " src="https://i.postimg.cc/mD3wsvYx/output-onlinepngtools-1.png" alt="" />
-                <p className="text-5xl font-semibold text-white">Tesla 3 Model Y</p>
+                <img className="w-16 lg:w-20 " src="https://i.postimg.cc/mD3wsvYx/output-onlinepngtools-1.png" alt="" />
+                <p className="text-3xl lg:text-5xl font-semibold text-white">Tesla 3 Model Y</p>
               </div>
-              <button className="glass  px-[18px] text-white rounded-md py-[10px] hover:bg-white font-medium hover:text-gray-800 hover:transition">
+              <button className="glass  px-[12px] py-[6px] lg:py-[10px]  lg:px-[18px] text-white rounded-md hover:bg-white font-medium hover:text-gray-800 hover:transition">
                 Buy Now
               </button>
             </div>
@@ -82,10 +82,10 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-40"></div>
             <div className="text-center">
               <div className="flex items-center -mt-[260px]">
-                <img className="w-[180px] -mr-6" src="https://i.postimg.cc/9fgbb6dC/toyota-log.png" alt="" />
-                <p className="text-5xl font-semibold text-white">Toyota Corolla</p>
+                <img className="w-[120px] lg:w-[180px] -mr-2 lg:-mr-6" src="https://i.postimg.cc/9fgbb6dC/toyota-log.png" alt="" />
+                <p className="text-3xl lg:text-5xl font-semibold text-white">Toyota Corolla</p>
               </div>
-              <button className="glass  px-[18px] text-white rounded-md py-[10px] hover:bg-white font-medium hover:text-gray-800 hover:transition">
+              <button className="glass px-[12px] py-[6px] lg:py-[10px]  lg:px-[18px] text-white rounded-md hover:bg-white font-medium hover:text-gray-800 hover:transition">
                 Buy Now
               </button>
             </div>
@@ -101,10 +101,10 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-40"></div>
             <div className="text-center">
               <div className="flex gap-4 items-center -mt-[260px]">
-                <img className="w-20 " src="https://i.postimg.cc/mD3wsvYx/output-onlinepngtools-1.png" alt="" />
-                <p className="text-5xl font-semibold text-white">Tesla Roadster</p>
+                <img className="w-16 lg:w-20 " src="https://i.postimg.cc/mD3wsvYx/output-onlinepngtools-1.png" alt="" />
+                <p className="text-3xl lg:text-5xl font-semibold text-white">Tesla Roadster</p>
               </div>
-              <button className="glass  px-[18px] text-white rounded-md py-[10px] hover:bg-white font-medium hover:text-gray-800 hover:transition">
+              <button className="glass  px-[12px] py-[6px] lg:py-[10px]  lg:px-[18px] text-white rounded-md hover:bg-white font-medium hover:text-gray-800 hover:transition">
                 Buy Now
               </button>
             </div>
@@ -121,10 +121,10 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-40"></div>
             <div className="text-center">
               <div className="flex gap-1 items-center -mt-[260px]">
-                <img className="w-[150px] " src="https://i.postimg.cc/J031vzBJ/mercedes.png" alt="" />
-                <p className="text-5xl font-semibold text-white">Mercedes-Benz C-Class</p>
+                <img className="w-[90px] lg:w-[150px] " src="https://i.postimg.cc/J031vzBJ/mercedes.png" alt="" />
+                <p className="text-2xl lg:text-5xl font-semibold text-white">Mercedes-Benz C-Class</p>
               </div>
-              <button className="glass  px-[18px] text-white rounded-md py-[10px] hover:bg-white font-medium hover:text-gray-800 hover:transition">
+              <button className="glass  px-[12px] py-[6px] lg:py-[10px]  lg:px-[18px] text-white rounded-md hover:bg-white font-medium hover:text-gray-800 hover:transition">
                 Buy Now
               </button>
             </div>
@@ -140,10 +140,10 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-40"></div>
             <div className="text-center">
               <div className="flex gap-4 items-center -mt-[260px]">
-                <img className="w-[170px] " src="https://i.postimg.cc/5t9gJ44w/output-onlinepngtools-2.png" alt="" />
-                <p className="text-5xl font-semibold text-white">Ford Mondeo</p>
+                <img className="w-[120px] lg:w-[170px] " src="https://i.postimg.cc/5t9gJ44w/output-onlinepngtools-2.png" alt="" />
+                <p className="text-3xl lg:text-5xl font-semibold text-white">Ford Mondeo</p>
               </div>
-              <button className="glass -mt-4  px-[18px] text-white rounded-md py-[10px] hover:bg-white font-medium hover:text-gray-800 hover:transition">
+              <button className="glass -mt-4 px-[12px] py-[6px] lg:py-[10px]  lg:px-[18px] text-white rounded-md  hover:bg-white font-medium hover:text-gray-800 hover:transition">
                 Buy Now
               </button>
             </div>

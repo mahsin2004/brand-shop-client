@@ -6,16 +6,16 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-tr from-gray-800 to-gray-800">
       <div className="max-w-[1440px] px-16 mx-auto py-14">
-        <div className="flex gap-48 items-center justify-center">
-          <div className="">
+        <div className="lg:flex lg:gap-48 lg:items-center lg:justify-center">
+          <div className="mb-6">
             <img
-              className=" w-28 text-white"
+              className=" w-28 text-white mx-auto lg:mx-0"
               src="https://i.postimg.cc/m2PtjFSF/output-onlinepngtools.png"
               alt="logo"
             />
-            <p className="uppercase text-white text-2xl">Automotive</p>
+            <p className="uppercase text-white text-2xl text-center">Automotive</p>
           </div>
-          <div className="flex gap-10">
+          <div className="flex gap-10 justify-center">
             <NavLink to="/">
               <p className=" text-white">
                 Home

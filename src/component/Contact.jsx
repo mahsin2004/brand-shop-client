@@ -10,13 +10,13 @@ const Contact = () => {
       }}
     >
       <div className="hero-overlay bg-opacity-60"></div>
-      <div className="max-w-[1440px] mx-auto px-16">
-        <div className="flex justify-around">
-          <div className="card text-white p-6 rounded-xl glass space-y-4 w-1/2">
-            <h2 className="pb-4 pt-2 text-5xl pl-4 rounded-md bg-gradient-to-tr from-gray-900 to-gray-600 font-medium">
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-16 py-16">
+        <div className="lg:flex lg:justify-around">
+          <div className="card text-white p-6 rounded-xl glass space-y-4 lg:w-1/2 mb-10">
+            <h2 className="pb-4 pt-2 text-3xl lg:text-5xl pl-4 rounded-md bg-gradient-to-tr from-gray-900 to-gray-600 font-medium">
               Get in Touch
             </h2>
-            <p className="text-5xl font-medium w-5/6">
+            <p className="text-3xl lg:text-5xl font-medium w-5/6">
               Send us a message for any information
             </p>
             <div className=" space-y-1">
@@ -40,7 +40,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/3">
+          <div className="lg:w-1/3">
             <div>
               <form className="space-y-4 text-center">
                 <input
