@@ -9,11 +9,11 @@ const Navbar = () => {
           isPending
             ? "pending"
             : isActive
-            ? "bg-base-200 rounded-sm text-gray-700"
+            ? "bg-base-200 rounded-sm text-gray-600"
             : ""
         }
       >
-        <li className="py-2 px-4 text-gray-600 font-medium">Home</li>
+        <li className="py-2 px-4 hover:font-semibold text-gray-600 font-medium">Home</li>
       </NavLink>
       <NavLink
         to="/addProduct"
@@ -21,11 +21,11 @@ const Navbar = () => {
           isPending
             ? "pending"
             : isActive
-            ? "bg-base-200 rounded-sm text-gray-700"
+            ? "bg-base-200 rounded-sm text-gray-600"
             : ""
         }
       >
-        <li className="py-2 px-4 text-gray-600 font-medium">Add Product</li>
+        <li className="py-2 px-4 hover:font-semibold text-gray-600 font-medium">Add Product</li>
       </NavLink>
       <NavLink
         to="/myCart"
@@ -33,17 +33,17 @@ const Navbar = () => {
           isPending
             ? "pending"
             : isActive
-            ? "bg-base-200 rounded-sm text-gray-700"
+            ? "bg-base-200 rounded-sm text-gray-600"
             : ""
         }
       >
-        <li className="bg-base-200 rounded-sm font-medium text-gray-700">My Cart</li>
+        <li className="py-2 px-4 hover:font-semibold text-gray-600 font-medium">My Cart</li>
       </NavLink>
     </>
   );
 
   return (
-    <div className="sticky top-0 z-10 w-full glass">
+    <div className="sticky top-0 z-10 w-full bg-base-100 drop-shadow-sm border-b-2">
       <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
@@ -70,13 +70,18 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="normal-case text-xl">Automotive</a>
+          <div className="hidden lg:block">
+            <img className="w-16" src="https://i.postimg.cc/0jYhkhyg/icon1.png" alt="logo" />
+            <p className="normal-case text-xl">Automotive</p>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <button className="hover:bg-gray-600 py-2 px-5 hover:text-white hover:rounded-md rounded-md border">Log in</button>
+          <button className="hover:bg-base-200 hover:font-semibold py-2 px-5 text-gray-600 hover:rounded-sm rounded-sm border">
+            Log in
+          </button>
         </div>
       </div>
     </div>

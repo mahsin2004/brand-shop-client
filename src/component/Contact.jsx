@@ -13,7 +13,7 @@ const Contact = () => {
       <div className="max-w-[1440px] mx-auto px-16">
         <div className="flex justify-around">
           <div className="card text-white p-6 rounded-xl glass space-y-4 w-1/2">
-            <h2 className="pb-4 pt-2 text-5xl pl-4 rounded-md bg-gradient-to-tr from-gray-900 to-gray-600 font-semibold">
+            <h2 className="pb-4 pt-2 text-5xl pl-4 rounded-md bg-gradient-to-tr from-gray-900 to-gray-600 font-medium">
               Get in Touch
             </h2>
             <p className="text-5xl font-medium w-5/6">
