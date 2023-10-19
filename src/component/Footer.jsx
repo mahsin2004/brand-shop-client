@@ -15,7 +15,7 @@ const Footer = () => {
             />
             <p className="uppercase text-white text-2xl text-center">Automotive</p>
           </div>
-          <div className="flex gap-10 justify-center">
+          <div className="flex text-[12px] md:text-base lg:text-base gap-3 md:gap-10 justify-center">
             <NavLink to="/">
               <p className=" text-white">
                 Home

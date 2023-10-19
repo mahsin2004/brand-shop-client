@@ -1,6 +1,15 @@
 import { NavLink } from "react-router-dom";
+import useAuth from "../hook/useAuth";
+import { CgProfile } from "react-icons/cg";
 
 const Navbar = () => {
+  const { user, logOut } = useAuth();
+  const handleLogOut = () => {
+    logOut()
+      .then((res) => console.log(res))
+      .catch((error) => console.error(error));
+  };
+
   const links = (
     <>
       <NavLink
@@ -9,11 +18,13 @@ const Navbar = () => {
           isPending
             ? "pending"
             : isActive
-            ? "bg-base-200 rounded-sm text-gray-600"
+            ? "text-red-400 border-b-[2px] rounded-full"
             : ""
         }
       >
-        <li className="py-2 px-4 hover:text-gray-900 text-gray-600 font-medium">Home</li>
+        <li className="py-2 px-4 hover:text-red-400 hover:rounded-full font-medium">
+          Home
+        </li>
       </NavLink>
       <NavLink
         to="/addProduct"
@@ -21,11 +32,13 @@ const Navbar = () => {
           isPending
             ? "pending"
             : isActive
-            ? "bg-base-200 rounded-sm text-gray-600"
+            ? "text-red-400 border-b-[2px] rounded-full"
             : ""
         }
       >
-        <li className="py-2 px-4 hover:text-gray-900 text-gray-600 font-medium">Add Product</li>
+        <li className="py-2 px-4 hover:text-red-400 hover:rounded-full font-medium">
+          Add Product
+        </li>
       </NavLink>
       <NavLink
         to="/myCart"
@@ -33,17 +46,19 @@ const Navbar = () => {
           isPending
             ? "pending"
             : isActive
-            ? "bg-base-200 rounded-sm text-gray-600"
+            ? "text-red-400 border-b-[2px] rounded-full"
             : ""
         }
       >
-        <li className="py-2 px-4 hover:text-gray-900 text-gray-600 font-medium">My Cart</li>
+        <li className="py-2 px-4 hover:text-red-400 hover:rounded-full font-medium">
+          My Cart
+        </li>
       </NavLink>
     </>
   );
 
   return (
-    <div className="sticky top-0 z-10 w-full bg-base-100 drop-shadow-sm border-b-2">
+    <div className="sticky top-0 z-10 w-full bg-base-100 drop-shadow-sm border-b-2 border-base-200">
       <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
@@ -71,7 +86,11 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="hidden lg:block">
-            <img className="w-16" src="https://i.postimg.cc/0jYhkhyg/icon1.png" alt="logo" />
+            <img
+              className="w-16"
+              src="https://i.postimg.cc/0jYhkhyg/icon1.png"
+              alt="logo"
+            />
             <p className="normal-case text-xl">Automotive</p>
           </div>
         </div>
@@ -79,9 +98,44 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <button className="hover:bg-base-200 hover:font-semibold py-2 px-5 text-gray-600 hover:rounded-sm rounded-sm border">
-            Log in
-          </button>
+          {user ? (
+            <>
+              <div className="flex items-center gap-2 lg:gap-4">
+                <button
+                  onClick={handleLogOut}
+                  className="py-2 px-4 hover:text-red-400 border-b-[2px] rounded-full"
+                >
+                  Log out
+                </button>
+                <div className="flex items-center gap-1">
+                  <div className="text-right hidden md:block lg:block">
+                    <p className="text-[12px]">{user?.displayName}</p>
+                    <p className="text-[14px]">{user?.email}</p>
+                  </div>
+                  <p>
+                    <CgProfile className="text-4xl text-gray-600"></CgProfile>
+                  </p>
+                </div>
+              </div>
+            </>
+          ) : (
+            <>
+              <NavLink
+                to="/login"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? " text-red-500 rounded-sm"
+                    : ""
+                }
+              >
+                <p className="py-2 px-4 hover:text-red-400 border-b-[2px] rounded-full">
+                  Log In
+                </p>
+              </NavLink>
+            </>
+          )}
         </div>
       </div>
     </div>
