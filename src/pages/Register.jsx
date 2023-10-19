@@ -31,10 +31,9 @@ const Register = () => {
     createUser(email, password)
     .then(() => {
       profileUpdate(name).then(() => {
-        toast.success("user create successfully");
         window.location.reload();
       });
-      
+      toast.success("user create successfully");
     })
     .catch((error) => {
       toast.error(error.code);

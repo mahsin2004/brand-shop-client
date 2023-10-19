@@ -74,13 +74,18 @@ const UpdateProduct = () => {
               <label className="label">
                 <span className="label-text">Type</span>
               </label>
-              <input
-                type="text"
+              <select 
                 name="type"
-                placeholder="Enter type"
+                placeholder="select type"
                 className="input input-bordered"
                 required
-              />
+                >
+                <option value="select">select</option>
+                <option value="car">car</option>
+                <option value="bus">bus</option>
+                <option value="mini">mini bus</option>
+                <option value="truck">truck</option>
+              </select>
             </div>
             <div className="form-control">
               <label className="label">

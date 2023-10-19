@@ -1,10 +1,10 @@
 const Services = () => {
   return (
-    <div className="max-w-[1400px] mx-auto px-6 py-28">
+    <div className="max-w-[1400px] mx-auto px-10 py-28">
       <div>
-        <h1 className="text-4xl lg:text-5xl font-semibold text-gray-800">Our Services</h1>
-        <div className="pt-2">
-          <p className=" text-gray-600 lg:text-xl lg:w-2/4">
+        <h1 className="text-4xl text-center lg:text-5xl font-semibold text-gray-800">Our Services</h1>
+        <div className="pt-2 flex justify-center">
+          <p className=" text-gray-600 text-center text-base lg:text-lg lg:w-2/4">
             Our pricing experts exclusive insights help you buy a new or used
             car and get a loan
           </p>

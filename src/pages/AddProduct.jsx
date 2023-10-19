@@ -1,10 +1,8 @@
-import Swal from 'sweetalert2'
-
+import Swal from "sweetalert2";
 
 const AddProduct = () => {
-
   const addProduct = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const form = e.target;
     const name = form.name.value;
     const brandName = form.brandName.value;
@@ -13,31 +11,41 @@ const AddProduct = () => {
     const rating = form.rating.value;
     const shortDescription = form.shortDescription.value;
     const image = form.image.value;
-    const brand = { name, brandName, type, price, rating, shortDescription, image}
-    console.log(brand)
+    const brand = {
+      name,
+      brandName,
+      type,
+      price,
+      rating,
+      shortDescription,
+      image,
+    };
+    console.log(brand);
 
-    fetch('https://brand-shop-server-jre203ja5-mahsin2004s-projects.vercel.app/brands', {
-      method: "POST",
-      headers: {
-        "content-type" : "application/json"
-      },
-      body: JSON.stringify(brand)
-    })
-    .then(res => res.json())
-    .then(data => {
-      console.log(data)
-      if(data.insertedId)
+    fetch(
+      "https://brand-shop-server-jre203ja5-mahsin2004s-projects.vercel.app/brands",
       {
-        Swal.fire({
-          title: 'Successfully',
-          text: 'Product Adding',
-          icon: 'success',
-          confirmButtonText: 'oky'
-        })
-        form.reset()
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(brand),
       }
-    })
-  }
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          Swal.fire({
+            title: "Successfully",
+            text: "Product Adding",
+            icon: "success",
+            confirmButtonText: "oky",
+          });
+          form.reset();
+        }
+      });
+  };
 
   return (
     <div className="max-w-[991px] mx-auto my-16 px-5">
@@ -75,13 +83,18 @@ const AddProduct = () => {
               <label className="label">
                 <span className="label-text">Type</span>
               </label>
-              <input
-                type="text"
+              <select 
                 name="type"
-                placeholder="Enter type"
+                placeholder="select type"
                 className="input input-bordered"
                 required
-              />
+                >
+                <option value="select">select type</option>
+                <option value="car">car</option>
+                <option value="bus">bus</option>
+                <option value="mini">mini bus</option>
+                <option value="truck">truck</option>
+              </select>
             </div>
             <div className="form-control">
               <label className="label">
@@ -132,7 +145,10 @@ const AddProduct = () => {
               />
             </div>
             <div className="form-control lg:col-span-2 ">
-              <button type="submit" className="py-3 bg-slate-700  text-white font-medium px-5 rounded-md">
+              <button
+                type="submit"
+                className="py-3 bg-slate-700  text-white font-medium px-5 rounded-md"
+              >
                 Add Product
               </button>
             </div>
