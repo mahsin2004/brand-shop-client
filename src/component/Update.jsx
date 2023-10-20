@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
+import useAuth from "../hook/useAuth";
 
 const Update = () => {
   const [brands, setBrands] = useState([]);
@@ -61,6 +62,16 @@ const Update = () => {
         }
       });
   };
+
+  const { loading } = useAuth();
+
+    if (loading) {
+        return (
+            <div className="flex justify-center">
+                <p className="loading loading-spinner loading-md"></p>
+            </div>
+        );
+    }
 
   return (
     <div className="max-w-[991px] mx-auto my-16 px-5">

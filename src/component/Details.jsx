@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
+import useAuth from "../hook/useAuth";
 
 const Details = () => {
   const [brands, setBrands] = useState([]);
   const { id } = useParams();
 
   const myCart = (brand) => {
-    console.log(brand)
-    fetch("https://brand-shop-server-frrmy4qm8-mahsin2004s-projects.vercel.app/myCart",
+    console.log(brand);
+    fetch(
+      "https://brand-shop-server-frrmy4qm8-mahsin2004s-projects.vercel.app/myCart",
       {
         method: "POST",
         headers: {
@@ -40,6 +42,17 @@ const Details = () => {
   }, []);
 
   const brandName1 = brands.filter((brand) => brand?._id === id);
+
+  const { loading } = useAuth();
+
+  if (loading) {
+    return (
+      <div className="flex justify-center">
+        <p className="loading loading-spinner loading-md"></p>
+      </div>
+    );
+  }
+
   return (
     <div className="max-w-[700px] mx-auto my-16 px-5">
       <div className="drop-shadow-md  hover:drop-shadow-xl transition">
