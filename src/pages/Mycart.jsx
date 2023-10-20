@@ -42,7 +42,7 @@ const MyCart = () => {
   };
 
   return (
-    <div className="py-20 max-w-[1440px] mx-auto px-12">
+    <div className="py-20 max-w-[1440px] mx-auto px-4 lg:px-12">
       <div className="grid md:grid-cols-3 gap-5">
         {carts.length > 0 ? (
           <>
@@ -77,7 +77,7 @@ const MyCart = () => {
               </h1>
               <div className="mx-auto mt-3">
                 <Link to="/">
-                  <p className="py-2 px-4 lg:py-3 lg:px-6  bg-gray-800 text-white rounded-md">
+                  <p className="py-2 px-2 lg:py-3 lg:px-6  bg-gray-800 text-white rounded-md">
                     Go Back Home
                   </p>
                 </Link>

@@ -50,7 +50,7 @@ const Products = () => {
           <Slider key={brand._id} brand={brand}></Slider>
         ))}
       </div>
-      <div className="max-w-[1400px] mx-auto px-10 py-20 ">
+      <div className="max-w-[1400px] mx-auto px-4 lg:px-10 py-20 ">
         <h1 className="text-5xl pb-10 text-center font-medium text-gray-700">
           Products
         </h1>
