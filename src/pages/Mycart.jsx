@@ -1,10 +1,18 @@
-import { useState } from "react";
-import { Link, useLoaderData } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 import Swal from "sweetalert2";
 
 const MyCart = () => {
-  const cartLoaded = useLoaderData();
-  const [carts, setCarts] = useState(cartLoaded);
+  const [carts, setCarts] = useState([]);
+
+  useEffect(() => {
+    fetch(
+      "https://brand-shop-server-en64uswb4-mahsin2004s-projects.vercel.app/myCart"
+    )
+      .then((res) => res.json())
+      .then((data) => setCarts(data));
+  }, []);
 
   const deleteItem = (id) => {
     Swal.fire({
@@ -25,10 +33,10 @@ const MyCart = () => {
         )
           .then((res) => res.json())
           .then((data) => {
+            const remaining = carts.filter((brand) => brand._id !== id);
+            setCarts(remaining);
             console.log(data);
             if (data.deletedCount > 0) {
-              const remaining = carts.filter((brand) => brand._id !== id);
-              setCarts(remaining);
               Swal.fire({
                 title: "Successfully",
                 text: "Coffee Item Deleted",
@@ -73,7 +81,7 @@ const MyCart = () => {
           <div className=" col-span-3">
             <div className="flex flex-col">
               <h1 className="text-5xl text-center text-red-600">
-              No item was added.
+                No item was added.
               </h1>
               <div className="mx-auto mt-3">
                 <Link to="/">

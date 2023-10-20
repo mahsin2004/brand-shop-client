@@ -183,7 +183,7 @@ const Update = () => {
                 type="submit"
                 className="py-3 bg-slate-700  text-white font-medium px-5 rounded-md"
               >
-                Update Product
+                Submit Product
               </button>
             </div>
           </div>
