@@ -23,7 +23,7 @@ const AddProduct = () => {
     console.log(brand);
 
     fetch(
-      "https://brand-shop-server-jre203ja5-mahsin2004s-projects.vercel.app/brands",
+      "https://brand-shop-server-bukep21qd-mahsin2004s-projects.vercel.app/brands",
       {
         method: "POST",
         headers: {

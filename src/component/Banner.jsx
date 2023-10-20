@@ -31,8 +31,6 @@ const Banner = () => {
         navigation
         scrollbar={{ clickable: true }}
         pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
       >
         <SwiperSlide>
           <div
@@ -95,7 +93,7 @@ const Banner = () => {
           <div
             className="hero min-h-screen"
             style={{
-              backgroundImage: "url(https://i.postimg.cc/SNhQwCZY/tesla.jpg)",
+              backgroundImage: "url(https://i.postimg.cc/SRsNW0YY/roadster-3.jpg)",
             }}
           >
             <div className="hero-overlay bg-opacity-40"></div>
@@ -134,14 +132,14 @@ const Banner = () => {
           <div
             className="hero min-h-screen"
             style={{
-              backgroundImage: "url(https://i.postimg.cc/J7s0Zjn9/ford.jpg)",
+              backgroundImage: "url(https://i.postimg.cc/V6PWhrd9/ford-car.jpg)",
             }}
           >
             <div className="hero-overlay bg-opacity-40"></div>
             <div className="text-center">
               <div className="flex gap-4 items-center -mt-[260px]">
                 <img className="w-[130px] lg:w-[170px] " src="https://i.postimg.cc/5t9gJ44w/output-onlinepngtools-2.png" alt="" />
-                <p className="text-3xl lg:text-5xl font-semibold text-white">Ford Mondeo</p>
+                <p className="text-3xl lg:text-5xl font-semibold text-white">Ford mustang</p>
               </div>
               <button className="glass -mt-4 px-[12px] py-[6px] lg:py-[10px]  lg:px-[18px] text-white rounded-md  hover:bg-white font-medium hover:text-gray-800 hover:transition">
                 Buy Now
