@@ -35,22 +35,23 @@ const Routes = createBrowserRouter([
         },
         {
           path: "/myCart",
-          element: <PrivetRoute><MyCart></MyCart></PrivetRoute>
+          element: <PrivetRoute><MyCart></MyCart></PrivetRoute>,
+          loader: () => fetch("https://brand-shop-server-frrmy4qm8-mahsin2004s-projects.vercel.app/myCart")
         },
         {
           path: "/products/:id",
           element: <Products></Products>,
-          loader: ({params}) => fetch(`https://brand-shop-server-bukep21qd-mahsin2004s-projects.vercel.app/names/${params.id}`)
+          loader: ({params}) => fetch(`https://brand-shop-server-frrmy4qm8-mahsin2004s-projects.vercel.app/names/${params.id}`)
         },
         {
           path: "/update/:id",
           element: <PrivetRoute><Update></Update></PrivetRoute>,
-          loader: ({params}) => fetch(`https://brand-shop-server-bukep21qd-mahsin2004s-projects.vercel.app/brands/${params.id}`)
+          loader: ({params}) => fetch(`https://brand-shop-server-frrmy4qm8-mahsin2004s-projects.vercel.app/brands/${params.id}`)
         },
         {
           path: "/details/:id",
           element: <PrivetRoute><Details></Details></PrivetRoute>,
-          loader: ({params}) => fetch(`https://brand-shop-server-bukep21qd-mahsin2004s-projects.vercel.app/brands/${params.id}`)
+          loader: ({params}) => fetch(`https://brand-shop-server-3sgwf2qkr-mahsin2004s-projects.vercel.app/brands/${params.id}`)
         }
       ]
     },
