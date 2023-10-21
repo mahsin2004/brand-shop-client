@@ -12,9 +12,7 @@ const Products = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(
-      "https://brand-shop-server-7rax2770d-mahsin2004s-projects.vercel.app/names"
-    )
+    fetch("https://brand-shop-server-ee5q1ivi9-mahsin2004s-projects.vercel.app/names")
       .then((res) => res.json())
       .then((data) => setBrandNames(data));
   }, []);
@@ -22,9 +20,7 @@ const Products = () => {
   const brandName = brandNames.filter((brand) => brand._id === id);
 
   useEffect(() => {
-    fetch(
-      "https://brand-shop-server-7rax2770d-mahsin2004s-projects.vercel.app/brands"
-    )
+    fetch("https://brand-shop-server-ee5q1ivi9-mahsin2004s-projects.vercel.app/brands")
       .then((res) => res.json())
       .then((data) => setBrands(data));
   }, []);

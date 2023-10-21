@@ -23,7 +23,7 @@ const AddProduct = () => {
     console.log(brand);
 
     fetch(
-      "https://brand-shop-server-bukep21qd-mahsin2004s-projects.vercel.app/brands",
+      "https://brand-shop-server-ee5q1ivi9-mahsin2004s-projects.vercel.app/brands",
       {
         method: "POST",
         headers: {
@@ -49,11 +49,11 @@ const AddProduct = () => {
 
   return (
     <div className="max-w-[991px] mx-auto my-16 px-5">
-      <div className="bg-base-200 mt-6 px-5 md:px-10 lg:px-20 py-12">
+      <div className="bg-base-200 mt-6 md:px-10 px-2 lg:px-20 py-12">
         <div className="mx-auto text-center max-w-[600px]">
           <h1 className=" text-3xl lg:text-[45px]">Add New Product</h1>
         </div>
-        <form onSubmit={addProduct} className="lg:card-body">
+        <form onSubmit={addProduct} className="">
           <div className=" grid lg:grid-cols-2 gap-4">
             <div className="form-control">
               <label className="label">

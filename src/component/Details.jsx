@@ -9,8 +9,7 @@ const Details = () => {
 
   const myCart = (brand) => {
     console.log(brand);
-    fetch(
-      "https://brand-shop-server-frrmy4qm8-mahsin2004s-projects.vercel.app/myCart",
+    fetch("https://brand-shop-server-ee5q1ivi9-mahsin2004s-projects.vercel.app/myCart",
       {
         method: "POST",
         headers: {
@@ -35,7 +34,7 @@ const Details = () => {
 
   useEffect(() => {
     fetch(
-      "https://brand-shop-server-7rax2770d-mahsin2004s-projects.vercel.app/brands"
+      "https://brand-shop-server-ee5q1ivi9-mahsin2004s-projects.vercel.app/brands"
     )
       .then((res) => res.json())
       .then((data) => setBrands(data));
