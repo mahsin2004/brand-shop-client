@@ -40,15 +40,6 @@ const Register = () => {
     });
   }
 
-  const { loading } = useAuth();
-
-    if (loading) {
-        return (
-            <div className="flex justify-center">
-                <p className="loading loading-spinner loading-md"></p>
-            </div>
-        );
-    }
 
   return (
     <div>

@@ -37,7 +37,7 @@ const MyCart = () => {
             if (data.deletedCount > 0) {
               Swal.fire({
                 title: "Successfully",
-                text: "Coffee Item Deleted",
+                text: "Item Deleted",
                 icon: "success",
                 confirmButtonText: "oky",
               });
