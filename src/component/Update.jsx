@@ -36,7 +36,7 @@ const Update = () => {
     };
     console.log(brand);
 
-    fetch("https://brand-shop-server-ee5q1ivi9-mahsin2004s-projects.vercel.app/brands",
+    fetch(`https://brand-shop-server-ee5q1ivi9-mahsin2004s-projects.vercel.app/brands/${id}`,
       {
         method: "PUT",
         headers: {
@@ -55,6 +55,7 @@ const Update = () => {
             icon: "success",
             confirmButtonText: "oky",
           });
+          window.location.reload();
           form.reset();
         }
       });
