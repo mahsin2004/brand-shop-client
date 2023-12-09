@@ -1,8 +1,17 @@
-## Automotive
+## Cars Collection
 
-## [client-side live link](https://brand-shop-client-1.web.app/)
+**[Server Side Repo Link](https://github.com/mahsin2004/brand-shop-server)**
 
-## [ Private Client Side Repo Link](https://github.com/programming-hero-web-course-4/b8a10-brandshop-client-side-mahsin2004)
+**[Live Link](https://brand-shop-client-1.web.app)**
+
+**To get started developing right away:**
+
+<ul>
+<li>install all project dependencies with (npm install)</li>
+<li>start the development server with (npm run start)</li>
+</ul>
+
+## Features
 
 ## 1. => In this project, I used a Server and Database(MongoDB), Storing Data and Loading Data From the Database.
 ## 2. => using some third-party library such as swiper for slider Animation from AOS.
