@@ -1,13 +1,21 @@
 ## Cars Collection
 
+## Description : Cars Collection Shop, where automotive enthusiasts find a curated selection of high-quality vehicles. User-friendly interface and detailed information on each unique automobile. 
+
 **[Server Side Repo Link](https://github.com/mahsin2004/brand-shop-server)**
 
 **[Live Link](https://brand-shop-client-1.web.app)**
 
-**To get started developing right away:**
+## Installation
+
+**Clone the repository:** <br/>
+git clone https://github.com/mahsin2004/brand-shop-client
 
 <ul>
-<li>install all project dependencies with (npm install)</li>
+  <li>
+Change into the project directory: cd your-project</li>
+<li>
+Install dependencies: npm install</li>
 <li>start the development server with (npm run start)</li>
 </ul>
 
